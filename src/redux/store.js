@@ -19,12 +19,12 @@ const persistConfig = {
   storage,
 };
 
-const persistedReducer = persistReducer(persistConfig, kampsReducer);
+const persistedReducer = persistReducer(persistConfig, favoritesReducer);
 
 export const store = configureStore({
   reducer: {
-    kamps: persistedReducer,
-    favorites: favoritesReducer,
+    kamps: kampsReducer,
+    favorites: persistedReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({

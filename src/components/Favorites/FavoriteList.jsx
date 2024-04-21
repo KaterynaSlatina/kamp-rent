@@ -1,5 +1,5 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { selectFavoriteKamp } from "../../redux/selectors";
 import svg from "../../icons/icons.svg";
 import css from "./FavoriteList.module.css";
@@ -7,12 +7,6 @@ import { removeFavorite } from "../../redux/favoritesSlice";
 
 export default function FavoriteList() {
   const favorites = useSelector(selectFavoriteKamp);
-
-  const dispatch = useDispatch();
-
-  const handleRemoveFavorite = (productId) => {
-    dispatch(removeFavorite(productId));
-  };
 
   return (
     <div>
@@ -23,8 +17,9 @@ export default function FavoriteList() {
                 <div className={css.FavNameAndRemove}>
                   <h2>{product.name}</h2>
                   <button
+                    type="button"
                     className={css.favBtnRemove}
-                    onClick={() => handleRemoveFavorite(product._id)}
+                    onClick={() => removeFavorite(product)}
                   >
                     Remove
                   </button>

@@ -49,11 +49,7 @@ export default function KampCard({ kamps }) {
             <h2>{kamps.name}</h2>
             <div className={css.priceAndFav}>
               <b className={css.kampPrice}>€{kamps.price}</b>
-              <button
-                className={css.btnHeart}
-                onClick={toggleFavorites}
-                isKampInFavorites={isKampInFavorites}
-              >
+              <button className={css.btnHeart} onClick={toggleFavorites}>
                 {isKampInFavorites ? (
                   <svg className={css.svgFavorite}>
                     <use href={`${svg}#icon-redHeart`}></use>
