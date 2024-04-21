@@ -1,0 +1,115 @@
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 902px;
+}
+
+.detailsTitleContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.detailsRatings {
+  display: flex;
+  font-size: 16px;
+}
+
+.detailsRatingAndLocation {
+  display: flex;
+  gap: 10px;
+}
+
+.svgReviewAndLocation {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.ratingAndReviews {
+  position: relative;
+  display: inline-block;
+}
+
+.ratingAndReviews::after {
+  content: "";
+  position: absolute;
+  background: #101828;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+}
+
+.kampPrice {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.detailsImg {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.kampImg {
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.kampDescription {
+  color: #475467;
+  line-height: 1.5;
+  margin-bottom: 44px;
+}
+
+.buttonsModal {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 44px;
+}
+
+button.btnFeatures {
+  display: block;
+  width: fit-content;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  border: none;
+  background-color: transparent;
+  position: relative;
+}
+
+button.btnReviews {
+  display: block;
+  width: fit-content;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  border: none;
+  background-color: transparent;
+  position: relative;
+}
+
+button.btnFeatures.active::after {
+  content: "";
+  position: absolute;
+  background: #e44848;
+  left: 0;
+  bottom: -20px;
+  width: 100%;
+  height: 5px;
+}
+
+button.btnReviews.active::after {
+  content: "";
+  position: absolute;
+  background: #e44848;
+  left: 0;
+  bottom: -20px;
+  width: 100%;
+  height: 5px;
+}

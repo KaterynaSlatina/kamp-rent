@@ -1,0 +1,37 @@
+.featureList {
+  width: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 44px;
+}
+
+.featureItem {
+  display: flex;
+  gap: 7px;
+  background-color: #f2f4f7;
+  padding: 12px 18px;
+  border-radius: 100px;
+  justify-content: center;
+}
+
+.vehicleDetailsTittle {
+  margin-bottom: 48px;
+}
+
+.vehicleDetailsList {
+  display: flex;
+  flex-direction: column;
+  width: 430px;
+  gap: 10px;
+}
+
+.vehicleDetailsItem {
+  display: flex;
+  justify-content: space-between;
+}
+.svgCard {
+  stroke: #101828;
+  width: 20px;
+  height: 20px;
+}

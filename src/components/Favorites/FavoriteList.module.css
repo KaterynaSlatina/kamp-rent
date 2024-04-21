@@ -1,0 +1,144 @@
+.favoriteContainer {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: 1px solid;
+  border-color: rgba(16, 24, 40, 0.2);
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.kampCardWrapper {
+  display: flex;
+  gap: 24px;
+  border: 1px solid;
+  border-color: rgba(16, 24, 40, 0.2);
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+.titleCardContainer {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.FavNameAndRemove {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.svgFavorite {
+  width: 24px;
+  height: 24px;
+}
+
+.btnHeart {
+  display: flex;
+  border: none;
+  background-color: transparent;
+}
+
+.priceAndFav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.ratingContainer {
+  display: flex;
+  font-size: 16px;
+  gap: 15px;
+}
+
+.kampImg {
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.kampPrice {
+  font-size: 24px;
+  font-weight: 600;
+}
+.kampDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 526px;
+}
+
+.kampDescription {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #475467;
+}
+
+.svgReviewAndLocation {
+  stroke: #101828;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+.svgCard {
+  stroke: #101828;
+  width: 20px;
+  height: 20px;
+}
+
+.ratingBlock {
+  display: flex;
+  align-items: stretch;
+}
+
+.featureList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-end;
+  gap: 7px;
+  background-color: #f2f4f7;
+  padding: 12px 18px;
+  border-radius: 100px;
+  justify-content: center;
+}
+.favLocation {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.favImgAndFeatures {
+  display: flex;
+  gap: 40px;
+  width: 800px;
+}
+
+.favBtnRemove {
+  width: 166px;
+  padding: 16px 40px;
+  color: #fff;
+  background-color: #e44848;
+  border-radius: 200px;
+  border: none;
+  line-height: 1.5;
+  font-size: 16px;
+
+  font-weight: 500;
+}
+
+.favBtnRemove:hover,
+.favBtnRemove:focus {
+  background-color: #d84343;
+}

@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid rgba(16, 24, 40, 0.2);
+  border-radius: 20px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  transition: opacity 500ms ease;
+}
+
+.navItem {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.navItem:hover {
+  opacity: 0.5;
+}
+
+.contacts {
+  display: flex;
+  gap: 20px;
+}

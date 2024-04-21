@@ -1,0 +1,128 @@
+.kampCardWrapper {
+  display: flex;
+  gap: 24px;
+  border: 1px solid;
+  border-color: rgba(16, 24, 40, 0.2);
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+.titleCardContainer {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.svgFavorite {
+  width: 24px;
+  height: 24px;
+}
+
+.btnHeart {
+  display: flex;
+  border: none;
+  background-color: transparent;
+}
+
+.priceAndFav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.ratingContainer {
+  display: flex;
+  font-size: 16px;
+  gap: 15px;
+}
+
+.kampImg {
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.kampPrice {
+  font-size: 24px;
+  font-weight: 600;
+}
+.kampDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 526px;
+}
+
+.kampDescription {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #475467;
+}
+
+.btnShowMore {
+  width: 166px;
+  padding: 16px 40px;
+  color: #fff;
+  background-color: #e44848;
+  border-radius: 200px;
+  border: none;
+  line-height: 1.5;
+  font-size: 16px;
+
+  font-weight: 500;
+}
+
+.btnShowMore:hover,
+btnShowMore:focus {
+  background-color: #d84343;
+}
+
+.svgReviewAndLocation {
+  stroke: #101828;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+.svgCard {
+  stroke: #101828;
+  width: 20px;
+  height: 20px;
+}
+
+.ratingBlock {
+  display: flex;
+  align-items: stretch;
+}
+.ratingAndReviews {
+  position: relative;
+  display: inline-block;
+}
+
+.ratingAndReviews::after {
+  content: "";
+  position: absolute;
+  background: #101828;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+}
+
+.featureList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-end;
+  gap: 7px;
+  background-color: #f2f4f7;
+  padding: 12px 18px;
+  border-radius: 100px;
+  justify-content: center;
+}
