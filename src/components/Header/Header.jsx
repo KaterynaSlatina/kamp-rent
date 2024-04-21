@@ -23,7 +23,7 @@ export default function Header() {
       </nav>
       <div>
         <ul className={css.contacts}>
-          <li>kampsuktaine@gmai.com</li>
+          <li>kampsukraine@gmai.com</li>
           <li>+38 067 000 00 00</li>
         </ul>
       </div>
