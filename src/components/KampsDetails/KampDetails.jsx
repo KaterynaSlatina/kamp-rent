@@ -10,7 +10,7 @@ export default function KampDetails({ kamps }) {
   const handleButtonClick = (button) => {
     setActiveButton(button);
   };
-
+  //
   const location = kamps.location;
   const parts = location.split(", ");
   const formattedLocation = parts.reverse().join(", ");
