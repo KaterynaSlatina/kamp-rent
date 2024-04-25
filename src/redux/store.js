@@ -1,9 +1,11 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 
-import { persistStore, persistReducer } from "redux-persist";
+// import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 
 import {
+  persistStore,
+  persistReducer,
   FLUSH,
   REHYDRATE,
   PAUSE,
@@ -21,7 +23,7 @@ const rootReducer = combineReducers({
 const persistConfig = {
   key: "root",
   storage,
-  whitelist: ["favorites"],
+  // whitelist: ["favorites"],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
