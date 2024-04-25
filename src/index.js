@@ -12,7 +12,7 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate persistor={persistor}>
-        <BrowserRouter basename="/kamp-rent">
+        <BrowserRouter basename="https://katerynaslatina.github.io/kamp-rent/">
           <App />
         </BrowserRouter>
       </PersistGate>
