@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Catalog from "./pages/Catalog";
 import FavoritePage from "./pages/FavoritePage";
@@ -13,7 +13,8 @@ function App() {
           <Route path="/catalog" element={<Catalog />} />
           <Route path="/favorites" element={<FavoritePage />} />
         </Route>
-        <Route path="*" element={<HomePage />} />
+        {/* <Route path="*" element={<HomePage />} /> */}
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </>
   );

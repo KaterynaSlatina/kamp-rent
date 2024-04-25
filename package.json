@@ -2,6 +2,7 @@
   "name": "kamp-rent",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://katerynaslatina.github.io/kamp-rent/",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
     "@testing-library/jest-dom": "^5.17.0",
