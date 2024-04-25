@@ -1,4 +1,4 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
 
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
@@ -14,18 +14,30 @@ import {
 import { kampsReducer } from "./kampsSlice";
 import { favoritesReducer } from "./favoritesSlice";
 
+const rootReducer = combineReducers({
+  favorites: favoritesReducer,
+  kamps: kampsReducer,
+});
 const persistConfig = {
-  key: "products",
+  key: "root",
   storage,
+  whitelist: ["favorites"],
 };
 
-const persistedReducer = persistReducer(persistConfig, favoritesReducer);
+const persistedReducer = persistReducer(persistConfig, rootReducer);
+// const persistConfig = {
+//   key: "products",
+//   storage,
+// };
+
+// const persistedReducer = persistReducer(persistConfig, favoritesReducer);
 
 export const store = configureStore({
-  reducer: {
-    kamps: kampsReducer,
-    favorites: persistedReducer,
-  },
+  reducer: persistedReducer,
+  // reducer: {
+  //   kamps: kampsReducer,
+  //   favorites: persistedReducer,
+  // },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {

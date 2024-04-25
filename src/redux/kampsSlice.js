@@ -27,6 +27,10 @@ const kampsSlice = createSlice({
       .addCase(fetchKamps.fulfilled, (state, action) => {
         state.error = null;
         state.kamps = action.payload;
+      })
+      .addCase(fetchKamps.rejected, (state, action) => {
+        state.isLoading = false;
+        state.error = action.error.message;
       });
   },
 });
